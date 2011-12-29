@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  
+  <head>
+    
+    
+      
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+      
+      
+      <title>
+        Neeraj Sharma&#39;s Wiki » 
+        Update Intel Microcode in Linux
+      </title>
+      
+      
+        <!-- YUI CSS reset, fonts, base -->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.0.0/build/cssreset/reset-min.css&amp;3.0.0/build/cssfonts/fonts-min.css&amp;3.0.0/build/cssbase/base-min.css" media="screen, projection" />
+        
+        <link rel="stylesheet" type="text/css" href="../media/css/style.css" media="screen, projection" />
+        <link rel="stylesheet" type="text/css" href="../media/css/pygments.css" media="screen, projection" />
+      
+      
+      
+      
+      
+        
+      
+    
+  </head>
+  
+  <body >
+    
+      
+      
+        
+          
+  
+    <ol id="breadcrumbs">
+      
+        <li class="crumb-0 not-last">
+          
+            <a href="../">index</a>
+          
+        </li>
+      
+        <li class="crumb-1 not-last">
+          
+            <a href="./">linux</a>
+          
+        </li>
+      
+        <li class="crumb-2 last">
+          
+            update_microcode
+          
+        </li>
+      
+    </ol> <!-- ol#breadcrumbs -->
+  
+
+        
+      
+      
+      <div id="content">
+        
+        
+        
+        <h1 id="update-intel-microcode-in-linux">Update Intel Microcode in Linux</h1>
+<p>I bought a great piece of hardware - Nehelam i7 and assembed other pieces to
+create a rock solid server, but suddenly I realized that the CPU didnt have
+fixes which it should have. This is where microcode patching comes into play
+and since I am using Linux, so doing it is a charm.</p>
+<p>Lets take a look how its done everytime the system boots up (since non-BIOS
+microcode update are not persistent).</p>
+<h2 id="the-process">The Process</h2>
+<p>Download the latest microcode from intel website and install it.</p>
+<div class="codehilite"><pre><span class="c1"># Install the microcode_ctl which does patching for us.</span>
+<span class="nv">$</span> <span class="nv">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">microcode_ctl</span>
+<span class="c1"># download the latest microcode (download new if this one is old now)</span>
+<span class="nv">$</span> <span class="nv">wget</span> <span class="n">http:</span><span class="sr">//</span><span class="n">downloadmirror</span><span class="o">.</span><span class="n">intel</span><span class="o">.</span><span class="n">com</span><span class="sr">/20728/</span><span class="n">eng</span><span class="o">/</span><span class="n">microcode</span><span class="o">-</span><span class="mi">20111110</span><span class="o">.</span><span class="n">tgz</span>
+<span class="nv">$</span> <span class="nv">tar</span> <span class="o">-</span><span class="n">xvzf</span> <span class="n">microcode</span><span class="o">-</span><span class="mi">20111110</span><span class="o">.</span><span class="n">tgz</span>
+<span class="nv">$</span> <span class="nv">sudo</span> <span class="n">cp</span> <span class="n">microcode</span><span class="o">.</span><span class="n">dat</span> <span class="sr">/lib/</span><span class="n">firmware</span><span class="o">/</span><span class="n">microcode</span><span class="o">.</span><span class="n">dat</span>
+<span class="nv">$</span> <span class="nv">sudo</span> <span class="n">microcode_ctl</span> <span class="o">-</span><span class="n">u</span>
+</pre></div>
+
+
+<p>Wow! Thats it.</p>
+<p>Enjoy!</p>
+        
+        
+        
+        
+        <hr class="clear" />
+      </div> <!-- div#content -->
+      
+      
+      <div id="footer">
+        <p>
+          
+            Neeraj Sharma&#39;s Wiki —
+          
+          Powered by <a href="http://markdoc.org/">Markdoc</a>.
+        </p>
+      </div>
+      
+    
+    
+    
+    <hr class="clear" />
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  
+  <head>
+    
+    
+      
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+      
+      
+      <title>
+        Neeraj Sharma&#39;s Wiki » 
+        Setup Markdoc
+      </title>
+      
+      
+        <!-- YUI CSS reset, fonts, base -->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.0.0/build/cssreset/reset-min.css&amp;3.0.0/build/cssfonts/fonts-min.css&amp;3.0.0/build/cssbase/base-min.css" media="screen, projection" />
+        
+        <link rel="stylesheet" type="text/css" href="../media/css/style.css" media="screen, projection" />
+        <link rel="stylesheet" type="text/css" href="../media/css/pygments.css" media="screen, projection" />
+      
+      
+      
+      
+      
+        
+      
+    
+  </head>
+  
+  <body >
+    
+      
+      
+        
+          
+  
+    <ol id="breadcrumbs">
+      
+        <li class="crumb-0 not-last">
+          
+            <a href="../">index</a>
+          
+        </li>
+      
+        <li class="crumb-1 not-last">
+          
+            <a href="./">linux</a>
+          
+        </li>
+      
+        <li class="crumb-2 last">
+          
+            setup_markdoc
+          
+        </li>
+      
+    </ol> <!-- ol#breadcrumbs -->
+  
+
+        
+      
+      
+      <div id="content">
+        
+        
+        
+        <h1 id="setup-markdoc">Setup Markdoc</h1>
+<p>I have been using <a href="http://markdoc.org">Markdoc</a> for some time and found its clean
+configuration and generated html interface very appealing. Apart from that
+<a href="http://markdoc.org">Markdoc</a> is written in one of my favourite language - python.</p>
+<p>This page talks about installing <a href="http://markdoc.org">Markdoc</a> and using it to generate
+static website which you could later publish to Apache/Nginx or any other
+webserver.</p>
+<h2 id="how-to-setup-on-centos">How to Setup on CentOS</h2>
+<p>Although this activity was performed on CentOS 6.1, still the information is
+valid for any CentOS version 6.1+.</p>
+<p>The first step is to install all the dependencies via the <code>yum</code> package
+installer.</p>
+<div class="codehilite"><pre><span class="nv">$</span> <span class="nv">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span> <span class="n">python</span><span class="o">-</span><span class="n">cherrypy2</span> <span class="n">python</span><span class="o">-</span><span class="n">jinja2</span> <span class="n">python</span><span class="o">-</span><span class="n">pygments</span> <span class="n">PyYAML</span><span class="o">.</span><span class="n">x86_64</span> <span class="n">python</span><span class="o">-</span><span class="n">webob1</span><span class="o">.</span><span class="mi">0</span> 
+<span class="nv">$</span> <span class="nv">sudo</span> <span class="n">pip</span><span class="o">-</span><span class="n">python</span> <span class="n">install</span> <span class="n">Markdoc</span>
+</pre></div>
+
+
+<p>After you have executed the install of <a href="http://markdoc.org">Markdoc</a>, you will see the
+following output on the screen. This indicates that the installation was
+successful.</p>
+<blockquote>
+<p>Successfully installed argparse Markdoc Markdown
+Cleaning up...</p>
+</blockquote>
+<p>Now you can use <a href="http://markdoc.org">Markdoc</a> via the command /usr/bin/markdoc.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://markdoc.org/quickstart">Quick Start</a></li>
+<li><a href="http://markdoc.org">Markdoc</a></li>
+</ul>
+        
+        
+        
+        
+        <hr class="clear" />
+      </div> <!-- div#content -->
+      
+      
+      <div id="footer">
+        <p>
+          
+            Neeraj Sharma&#39;s Wiki —
+          
+          Powered by <a href="http://markdoc.org/">Markdoc</a>.
+        </p>
+      </div>
+      
+    
+    
+    
+    <hr class="clear" />
+  </body>
+</html>
