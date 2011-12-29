@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  
+  <head>
+    
+    
+      
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+      
+      
+      <title>
+        Neeraj Sharma&#39;s Wiki » 
+        Markdown Help
+      </title>
+      
+      
+        <!-- YUI CSS reset, fonts, base -->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.0.0/build/cssreset/reset-min.css&amp;3.0.0/build/cssfonts/fonts-min.css&amp;3.0.0/build/cssbase/base-min.css" media="screen, projection" />
+        
+        <link rel="stylesheet" type="text/css" href="media/css/style.css" media="screen, projection" />
+        <link rel="stylesheet" type="text/css" href="media/css/pygments.css" media="screen, projection" />
+      
+      
+      
+      
+      
+        
+      
+    
+  </head>
+  
+  <body >
+    
+      
+      
+        
+          
+  
+    <ol id="breadcrumbs">
+      
+        <li class="crumb-0 not-last">
+          
+            <a href="./">index</a>
+          
+        </li>
+      
+        <li class="crumb-1 last">
+          
+            markdown_help
+          
+        </li>
+      
+    </ol> <!-- ol#breadcrumbs -->
+  
+
+        
+      
+      
+      <div id="content">
+        
+        
+        
+        <h1 id="markdown-help">Markdown Help</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Markdown</strong> is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
+<h3 id="syntax">Syntax</h3>
+<h4 id="strong-and-emphasize">Strong and Emphasize</h4>
+<p><strong>strong</strong> or <strong>strong</strong> ( Cmd + B )</p>
+<p><em>emphasize</em> or <em>emphasize</em> ( Shift + Cmd + I )</p>
+<p><strong>Sometimes I want a lot of text to be bold.
+Like, seriously, a <em>LOT</em> of text</strong></p>
+<h4 id="blockquotes">Blockquotes</h4>
+<blockquote>
+<p>Right angle brackets &gt; are used for block quotes.</p>
+</blockquote>
+<h4 id="links-and-email">Links and Email</h4>
+<p>An email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a> link.</p>
+<p>Simple inline link <a href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
+<p>A <a href="http://www.sourcetreeapp.com/" title="A powerfull Mac client for Git and Mercurial distributed version control systems.">reference style</a> link. Input id, then anywhere in the doc, define the link with corresponding id:</p>
+<p>Titles ( or called tool tips ) in the links are optional.</p>
+<h4 id="images">Images</h4>
+<p>An inline image <img alt="Smaller icon" src="http://smallerapp.com/favicon.ico" title="Title here" />, title is optional.</p>
+<p>A <img alt="Resize icon" src="http://resizesafari.com/favicon.ico" title="Title" /> reference style image.</p>
+<h4 id="inline-code-and-block-code">Inline code and Block code</h4>
+<p>Inline code are surround by <code>acute</code> key. To create a block code:</p>
+<div class="codehilite"><pre><span class="n">Indent</span> <span class="nb">each</span> <span class="n">line</span> <span class="n">by</span> <span class="n">at</span> <span class="n">least</span> <span class="mi">1</span> <span class="n">tab</span><span class="p">,</span> <span class="ow">or</span> <span class="mi">4</span> <span class="n">spaces</span><span class="o">.</span>
+<span class="n">var</span> <span class="n">markdown</span> <span class="o">=</span> <span class="n">Wow</span><span class="p">;</span>
+</pre></div>
+
+
+<h4 id="ordered-lists">Ordered Lists</h4>
+<p>Ordered lists are created using "1." + Space:</p>
+<ol>
+<li>Ordered list item</li>
+<li>Ordered list item</li>
+<li>Ordered list item</li>
+</ol>
+<h4 id="unordered-lists">Unordered Lists</h4>
+<p>Unordered list are created using "*" + Space:</p>
+<ul>
+<li>Unordered list item</li>
+<li>Unordered list item</li>
+<li>Unordered list item </li>
+</ul>
+<p>Or using "-" + Space:</p>
+<ul>
+<li>Unordered list item</li>
+<li>Unordered list item</li>
+<li>Unordered list item</li>
+</ul>
+<h4 id="hard-linebreak">Hard Linebreak</h4>
+<p>End a line with two or more spaces will create a hard linebreak, called <code>&lt;br /&gt;</code> in HTML. ( Control + Return )<br />
+Above line ended with 2 spaces.</p>
+<h4 id="horizontal-rules">Horizontal Rules</h4>
+<p>Three or more asterisks or dashes:</p>
+<hr />
+<hr />
+<hr />
+<h4 id="headers">Headers</h4>
+<p>Setext-style:</p>
+<h1 id="this-is-h1">This is H1</h1>
+<h2 id="this-is-h2">This is H2</h2>
+<p>atx-style:</p>
+<h1 id="this-is-h1_1">This is H1</h1>
+<h2 id="this-is-h2_1">This is H2</h2>
+<h3 id="this-is-h3">This is H3</h3>
+<h4 id="this-is-h4">This is H4</h4>
+<h5 id="this-is-h5">This is H5</h5>
+<h6 id="this-is-h6">This is H6</h6>
+<h3 id="shortcuts">Shortcuts</h3>
+<h3 id="and-more">And more?</h3>
+<p>Follow <a href="http://twitter.com/nsharma9">@neeraj</a> on Twitter for the latest news.</p>
+<p>For feedbacks, use the menu <code>Help</code> - <code>Send Feedback</code></p>
+        
+        
+        
+        
+        <hr class="clear" />
+      </div> <!-- div#content -->
+      
+      
+      <div id="footer">
+        <p>
+          
+            Neeraj Sharma&#39;s Wiki —
+          
+          Powered by <a href="http://markdoc.org/">Markdoc</a>.
+        </p>
+      </div>
+      
+    
+    
+    
+    <hr class="clear" />
+  </body>
+</html>
